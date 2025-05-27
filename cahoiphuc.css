@@ -1,0 +1,85 @@
+/* Các CSS hiện có của bạn cho COVIDLYTICS */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Màu nền nhẹ nhàng hơn cho toàn trang */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00bcd4; /* Màu navbar */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-items a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-items a:hover {
+    color: #f0f0f0;
+}
+
+.hero {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #e0f7fa; /* Màu nền phù hợp với ảnh của bạn */
+    min-height: calc(100vh - 70px); /* Đảm bảo chiều cao đủ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-conatiner {
+    display: flex;
+    flex-direction: column; /* Stack vertically for mobile */
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.casep {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+#updated-time {
+    font-weight: bold;
+    color: #555;
+}
+
+.case-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.case-item {
+    background-color: #ffffff;
+    border: 1px solid #b2ebf2; /* Viền nhẹ nhàng */
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    flex: 1; /* Allow items to grow/shrink */
+    min-width: 250px; /* Minimum width for each item */
+    max-width: 300px;
+}
